@@ -1,4 +1,5 @@
 module GenerateSsl
+  require "open3"
   class Openssl
     attr_reader :domain_name, :destination_path, :pass_phrase, :registration_data
     def initialize(domain_name, destination_path, passphrase, registration_data)
@@ -9,7 +10,7 @@ module GenerateSsl
     end
 
     def generate_rsa_key
-      
+
     end
 
 
